@@ -52,20 +52,20 @@ server:
 jdbc:
 
   # Mysql 数据库配置
-  type: mysql
-  driver: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3306/jeesite_v5?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
-  username: root
-  password: 123456
-  testSql: SELECT 1
+#  type: mysql
+#  driver: com.mysql.cj.jdbc.Driver
+#  url: jdbc:mysql://127.0.0.1:3306/jeesite_v5?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+#  username: root
+#  password: 123456
+#  testSql: SELECT 1
 
 #  # Oracle 数据库配置（11g，若使用 12c 以上版本，请打开 /modules/core/pom.xml 文件，替换为 Oracle 12c 驱动并编译打包 core 模块）
-#  type: oracle
-#  driver: oracle.jdbc.OracleDriver
-#  url: jdbc:oracle:thin:@127.0.0.1:1521/orcl
-#  username: jeesite
-#  password: jeesite
-#  testSql: SELECT 1 FROM DUAL
+  type: oracle
+  driver: oracle.jdbc.OracleDriver
+  url: jdbc:oracle:thin:@10.10.27.105:1521/orcl
+  username: jeesite
+  password: jeesite2024
+  testSql: SELECT 1 FROM DUAL
 
 #  # Sql Server 数据库配置（2008 版本，请打开 /modules/core/pom.xml 文件，替换为 SqlServer 2008 驱动并编译打包 core 模块）
 #  type: mssql
